@@ -24,4 +24,13 @@ public:
 
 	//aim where cross intersects the world
 	void AimTowardsCrosshair();
+
+	UPROPERTY(EditAnywhere)
+		float CHLocationX = 0.5f;
+
+	UPROPERTY(EditAnywhere)
+		float CHLocationY = 0.3333f;
+
+private:
+	bool GetSightRayHitLocation(FVector& hitLocation) const;
 };
